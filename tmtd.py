@@ -10,7 +10,8 @@ import io
 app = Flask(__name__)
 
 # Load the pre-trained model
-MODEL = load_model("model.h5")
+# MODEL = load_model("model.h5")
+MODEL = load_model("model_mnist_0.keras")
 
 @app.route("/", methods=["GET"])
 def index():

@@ -11,7 +11,9 @@
 
 ## Digit number model
 
-Downloaded from https://github.com/YakkaluruSathvik/Handwritten_Digit_Recognition/blob/main/model.h5
+~~Downloaded from https://github.com/YakkaluruSathvik/Handwritten_Digit_Recognition/blob/main/model.h5~~
+
+Replace model with trained from [model_mnist_0.keras](https://huggingface.co/wisetown/cnn-digit-recognizer/tree/main)
 
 ## Setup (MAC)
 
