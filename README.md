@@ -41,6 +41,15 @@ $ pip install Flask
 $ pip install python-dotenv
 ```
 
+### Install image recognition libraries
+
+```bash
+$ pip install tensorflow
+$ pip install opencv-python
+$ pip install numpy
+$ pip install Pillow
+```
+
 ## Start up
 
 ```bash
