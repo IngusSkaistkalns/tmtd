@@ -44,5 +44,5 @@ $ pip install python-dotenv
 ## Start up
 
 ```bash
-$ flask --app tmtd run --port=5001 --host=0.0.0.0
+$ flask --app tmtd run --port=5001 --host=0.0.0.0 --debug
 ```
