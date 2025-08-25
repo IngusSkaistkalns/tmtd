@@ -47,13 +47,34 @@ $ pip install python-dotenv
 
 ```bash
 $ pip install tensorflow
-$ pip install opencv-python
+$ pip install opencv-python-headless
 $ pip install numpy
 $ pip install Pillow
 ```
 
+### Install production server (for testing/deployment)
+
+```bash
+$ pip install gunicorn
+```
+
 ## Start up
+
+### Development server (with auto-reload)
 
 ```bash
 $ flask --app tmtd run --port=5001 --host=0.0.0.0 --debug
+```
+
+### Production server locally (using gunicorn)
+
+```bash
+# Basic gunicorn
+$ gunicorn tmtd:app --bind 0.0.0.0:5001
+
+# With auto-reload for development
+$ gunicorn tmtd:app --bind 0.0.0.0:5001 --reload
+
+# With more workers and logging
+$ gunicorn tmtd:app --bind 0.0.0.0:5001 --workers 4 --log-level info --reload
 ```

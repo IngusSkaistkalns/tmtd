@@ -6,6 +6,7 @@ from keras.models import load_model
 from PIL import Image
 import base64
 import io
+import os
 
 app = Flask(__name__)
 
@@ -65,3 +66,7 @@ def recognize():
     except Exception as e:
         print(f"Error: {e}")
         return jsonify({"error": "Failed to process image"}), 500
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5001))
+    app.run(host="0.0.0.0", port=port, debug=False)
