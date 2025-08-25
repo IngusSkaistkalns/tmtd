@@ -46,6 +46,12 @@ $ pip install python-dotenv
 ### Install image recognition libraries
 
 ```bash
+$ pip install -r requirements.txt
+```
+
+OR
+
+```bash
 $ pip install tensorflow
 $ pip install opencv-python-headless
 $ pip install numpy
