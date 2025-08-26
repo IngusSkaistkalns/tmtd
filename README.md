@@ -37,12 +37,6 @@ $ python3 -m venv .venv
 $ pip install Flask
 ```
 
-### Install dotenv support
-
-```bash
-$ pip install python-dotenv
-```
-
 ### Install image recognition libraries
 
 ```bash
